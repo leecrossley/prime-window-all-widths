@@ -1,0 +1,4 @@
+5000 certified pairs give density below 10^(-1012).
+15000 certified pairs give density above 10^(-10000) with angle budget 0.0004.
+15000 xi-sign intervals and a zero count establish the trial ordinates.
+The direct box volume and positive Bessel series confirm both density bounds.
