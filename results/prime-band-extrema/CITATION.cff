@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "Extremal constants for a family of weighted prime sums"
+abstract: "An explicit zero-mass formula, an RH-conditional limsup, and a liminf under linear independence."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.4
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-band-extrema
+type: software
