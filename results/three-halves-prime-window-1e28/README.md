@@ -4,7 +4,7 @@
 
 At dilation $b=3/2$, the weighted sum of primes between $y$ and $2.25y$ is strictly below its predicted size $\tfrac34y\log(3/2)$ at every real scale up to $10^{28}$. The proof is unconditional: it uses no unproven hypothesis such as the Riemann hypothesis, and relies instead on published proven results, among them Platt and Trudgian's verified height, the zero-density estimates of Kadiri, Lumley and Ng, and Büthe's bound for $\vartheta$.
 
-This extends the earlier direct check, which stopped at $10^5$, by 23 orders of magnitude. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros the sign is known to change arbitrarily far out, so under those hypotheses the sum exceeds its main term for some $y$. This result shows that every such $y$ is larger than $10^{28}$. [Earlier direct certificate](https://github.com/leecrossley/prime-band-three-halves-finite/tree/v1.0.0)
+This extends the earlier direct check, which stopped at $10^5$, by 23 orders of magnitude. Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros the sign is known to change arbitrarily far out, so under those hypotheses the sum exceeds its main term for some $y$. This result shows that every such $y$ is larger than $10^{28}$. [Earlier direct certificate](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-finite)
 
 ## Statement
 
@@ -53,4 +53,4 @@ At width $b=2$, bramble_trace's earlier certificate reached $10^{35}$ in its cen
 
 Caceres previously used zero-density strips to certify a different, cumulative logarithmic Riesz weight for the von Mangoldt function. This is a precedent for the finite-height method. [Caceres, Theorem 6](https://hexagonmath.org/pdf/2610.00661v2)
 
-The literature checked included Suzuki's cumulative criterion, the Caceres verification, Zhao's integrated Mertens errors and prior calculations for this exact window. I found no prior bound of this size for this $3/2$ ordinary-prime sum. [Suzuki](https://arxiv.org/abs/2411.07436), [Zhao](https://arxiv.org/html/2411.18903v2), [Previously established conditional sign changes](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
+The literature checked included Suzuki's cumulative criterion, the Caceres verification, Zhao's integrated Mertens errors and prior calculations for this exact window. I found no prior bound of this size for this $3/2$ ordinary-prime sum. [Suzuki](https://arxiv.org/abs/2411.07436), [Zhao](https://arxiv.org/html/2411.18903v2), [Previously established conditional sign changes](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-oscillation)

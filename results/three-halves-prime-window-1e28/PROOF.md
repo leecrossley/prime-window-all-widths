@@ -22,7 +22,7 @@ D(y)=\sum_{\rho}y^\rho H_b(\rho)+\sum_{m\ge1}y^{-2m}H_b(-2m)
 H_b(s)=\frac{(b^s-1)(b^s-b)}{s(s-1)} .
 $$
 
-The trivial-zero terms are positive and every prime-power weight is nonnegative. The nontrivial-zero series converges absolutely, including off the line, since $|H_b(\beta+i\tau)|\le 2b(b+1)/\tau^2$ for $0<\beta<1$. The formula follows by Mellin inversion of the von Mangoldt sum, or by smoothing the weight inside its support and taking the limit. [Explicit formula](https://people.maths.ox.ac.uk/greenbj/papers/primenumbers.pdf), [Mellin and phase identity](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.1)
+The trivial-zero terms are positive and every prime-power weight is nonnegative. The nontrivial-zero series converges absolutely, including off the line, since $|H_b(\beta+i\tau)|\le 2b(b+1)/\tau^2$ for $0<\beta<1$. The formula follows by Mellin inversion of the von Mangoldt sum, or by smoothing the weight inside its support and taking the limit. [Explicit formula](https://people.maths.ox.ac.uk/greenbj/papers/primenumbers.pdf), [Mellin and phase identity](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-mellin)
 
 Set $H=3\cdot10^{12}$. Every zero through this height is on the critical line by Platt and Trudgian. For each conjugate pair below $H$ the contribution to $D/\sqrt y$ is $a_\tau\cos(\tau\log(by))$, where
 

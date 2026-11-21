@@ -47,8 +47,8 @@ lake env python3 /path/to/repository/verify.py /path/to/empty/directory /path/to
 
 The build directory can begin empty. Reusing a dependency cache requires the same sources and compiler.
 
-The recorded run used Lean 4.33.1 on arm64 macOS. It freshly elaborated this repository's module, used compiled Mathlib from the pinned revision, replayed the module with `leanchecker`, and inspected the named declarations' axioms. Compiler commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6` and Mathlib commit `0df444a360eaa60ab8c11dca51a86af692955474` fix the environment. [Lean release](https://github.com/leanprover/lean4/releases/tag/v4.33.1), [Mathlib revision](https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474), [Latest release](https://github.com/leecrossley/prime-band-mellin/releases/latest)
+The recorded run used Lean 4.33.1 on arm64 macOS. It freshly elaborated this repository's module, used compiled Mathlib from the pinned revision, replayed the module with `leanchecker`, and inspected the named declarations' axioms. Compiler commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6` and Mathlib commit `0df444a360eaa60ab8c11dca51a86af692955474` fix the environment. [Lean release](https://github.com/leanprover/lean4/releases/tag/v4.33.1), [Mathlib revision](https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474), [Latest release](https://doi.org/10.5281/zenodo.24410836)
 
 ## Related result
 
-[Derivation of the general extremal formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+[Derivation of the general extremal formula](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)

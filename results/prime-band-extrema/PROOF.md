@@ -26,7 +26,7 @@ $$
  h_\rho=\frac{\sqrt b\thinspace(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
 $$
 
-[Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-band-mellin/tree/v1.0.1)
+[Formal proof of the strip and phase identities](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-mellin)
 
 ### 2. The explicit formula
 

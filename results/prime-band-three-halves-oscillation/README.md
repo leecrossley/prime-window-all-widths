@@ -22,7 +22,7 @@ For $b>1$ and $y>0$:
 
 ## Proof
 
-The general extremal formula gives $\limsup D_b(y)/\sqrt y=B_b+L_b$ under RH and $\liminf D_b(y)/\sqrt y=B_b-L_b$ with the additional independence hypothesis. [Derivation of the general extremal formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+The general extremal formula gives $\limsup D_b(y)/\sqrt y=B_b+L_b$ under RH and $\liminf D_b(y)/\sqrt y=B_b-L_b$ with the additional independence hypothesis. [Derivation of the general extremal formula](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 The executable proves $B_b-L_b<-0.0015$ and $B_b+L_b>0$ at $b=3/2$. Both signs therefore occur beyond every finite bound.
 
@@ -36,8 +36,8 @@ The written phase argument uses Kronecker's theorem for the negative extremum. T
 bash verify-release.sh
 ```
 
-This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://github.com/leecrossley/prime-band-three-halves-oscillation/releases/latest)
+This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://doi.org/10.5281/zenodo.24410827)
 
 ## Related result
 
-[Finite certificate at the same dilation](https://github.com/leecrossley/prime-band-three-halves-finite/tree/v1.0.0)
+[Finite certificate at the same dilation](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-finite)

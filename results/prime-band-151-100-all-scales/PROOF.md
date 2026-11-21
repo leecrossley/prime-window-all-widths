@@ -32,7 +32,7 @@ $$
    \sum_{\tau\in Z}2h_\tau(1+\cos(\tau\log(by))).
 $$
 
-Indeed each conjugate pair contributes $2h_\tau\cos(\tau\log(by))$. Bound all other cosines below by $-1$. Omitted prime powers of exponent at least three and the trivial-zero terms have favourable sign. The Mellin transform is positive at each negative even integer by its positive integral. The series over the zeros converges absolutely. [Explicit formula and the phase of the moving tent](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+Indeed each conjugate pair contributes $2h_\tau\cos(\tau\log(by))$. Bound all other cosines below by $-1$. Omitted prime powers of exponent at least three and the trivial-zero terms have favourable sign. The Mellin transform is positive at each negative even integer by its positive integral. The series over the zeros converges absolutely. [Explicit formula and the phase of the moving tent](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 Schoenfeld gives $|\vartheta(t)-t|\le \sqrt t\thinspace\log^2t/(8\pi)$ for $t\ge599$ under RH. For $m\ge599$ let $\epsilon_m=\log^2m/(8\pi\sqrt m)$. For $\sqrt y\ge m$ partial summation gives
 

@@ -17,7 +17,7 @@ $$
 
 ## Derivation
 
-Under RH, put $B_b=2\sqrt b(\sqrt b-1)^2$ and let $L_b$ be the sum over nontrivial zeta zeros, with multiplicities, of the positive moduli of the Mellin coefficients. The explicit formula yields an absolutely convergent trigonometric series for $D_b(y)/\sqrt y$ up to a term tending to zero. It gives limsup $B_b+L_b$, liminf at least $B_b-L_b$, and equality at the lower endpoint under the independence hypothesis. The sign classification therefore follows once the sign of $B_b-L_b$ is known. [Series, drift, zero mass and phase proof](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+Under RH, put $B_b=2\sqrt b(\sqrt b-1)^2$ and let $L_b$ be the sum over nontrivial zeta zeros, with multiplicities, of the positive moduli of the Mellin coefficients. The explicit formula yields an absolutely convergent trigonometric series for $D_b(y)/\sqrt y$ up to a term tending to zero. It gives limsup $B_b+L_b$, liminf at least $B_b-L_b$, and equality at the lower endpoint under the independence hypothesis. The sign classification therefore follows once the sign of $B_b-L_b$ is known. [Series, drift, zero mass and phase proof](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 For $1<b\le2$ the von Mangoldt ramp at $b$ vanishes because its first possible prime-power term is at 2 and has zero weight there. Substituting this into the zero-mass formula gives
 

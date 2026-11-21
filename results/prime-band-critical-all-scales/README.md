@@ -12,9 +12,9 @@ Let $b_\ast$ be the unique dilation in $(1.50342897722316,1.50342897722317)$ whe
 
 $$D_b(y)\ \ge\ (B_b-L_b)\sqrt y+0.035\thinspace y^{1/3}.$$
 
-In particular it stays positive at $b=b_\ast$ itself. If the distinct positive zeta-zero ordinates are also linearly independent over the rationals, then $\liminf D_{b_\ast}(y)/\sqrt y=0$ nonetheless. [Definition, uniqueness and enclosure of the threshold](https://github.com/leecrossley/prime-band-transition/tree/v1.0.1)
+In particular it stays positive at $b=b_\ast$ itself. If the distinct positive zeta-zero ordinates are also linearly independent over the rationals, then $\liminf D_{b_\ast}(y)/\sqrt y=0$ nonetheless. [Definition, uniqueness and enclosure of the threshold](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-transition)
 
-For $b>1$, $W_b(t)$ is $b(1-1/t)$ on $1<t\le b$, $b^2/t-1$ on $b<t<b^2$, and zero elsewhere. Write $D_b(y)=b(b-1)y\log b-\sum_p(\log p)W_b(p/y)$ with $p$ running over ordinary primes. Under RH let $L_b$ denote the sum of the moduli of the nontrivial zero coefficients, including both signs and multiplicities, and $B_b=2\sqrt b(\sqrt b-1)^2$. The threshold theorem gives $B_b\ge L_b$ throughout the stated interval. [Zero expansion and mass](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+For $b>1$, $W_b(t)$ is $b(1-1/t)$ on $1<t\le b$, $b^2/t-1$ on $b<t<b^2$, and zero elsewhere. Write $D_b(y)=b(b-1)y\log b-\sum_p(\log p)W_b(p/y)$ with $p$ running over ordinary primes. Under RH let $L_b$ denote the sum of the moduli of the nontrivial zero coefficients, including both signs and multiplicities, and $B_b=2\sqrt b(\sqrt b-1)^2$. The threshold theorem gives $B_b\ge L_b$ throughout the stated interval. [Zero expansion and mass](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 ## How the proof goes
 
