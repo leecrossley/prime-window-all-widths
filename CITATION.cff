@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "How rare is a reversal in the three-halves prime window?"
+abstract: "Assuming RH, the upper logarithmic density of reversals in the three-halves weighted prime window is below 10^(-232)."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/three-halves-reversal-upper-density
+type: software
