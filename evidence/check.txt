@@ -1,0 +1,13 @@
+Four zero-mass ceilings hold. The drift margin exceeds 0.003 on [1.51,2.27].
+At every y >= 10^10 the even-power bound leaves more than 0.00068 sqrt(y).
+Width 151/100: squares and cubes exceed 127/1000 times sqrt(y) on 35901 affine intervals.
+Width 154/100: squares and cubes exceed 140/1000 times sqrt(y) on 36262 affine intervals.
+Width 165/100: squares and cubes exceed 195/1000 times sqrt(y) on 37550 affine intervals.
+Width 185/100: squares and cubes exceed 300/1000 times sqrt(y) on 39866 affine intervals.
+Ordinary primes: 2375 closed width intervals, 39689083 positive endpoints.
+The unshifted von Mangoldt ramp and 24 trivial-zero terms confirm all spectral bounds.
+Width 151/100: 24074 lower chords clear the same square-root floor.
+Width 154/100: 24333 lower chords clear the same square-root floor.
+Width 165/100: 25247 lower chords clear the same square-root floor.
+Width 185/100: 26916 lower chords clear the same square-root floor.
+Three-ramp check: 39689083 positive endpoints across 2375 width intervals.
