@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The phase of the Mellin transform of a compact prime weight"
+abstract: "Lean proofs of nonvanishing in the open strip and exact critical-line phase for every dilation above one."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.4
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-band-mellin
+type: software

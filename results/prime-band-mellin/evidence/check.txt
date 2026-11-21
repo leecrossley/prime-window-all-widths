@@ -1,0 +1,5 @@
+Checked 0 upstream and 1 local modules for BandSpectrum.
+Compiler commit: 819816b2e0a3bf405af45ae5c7af2491d8f5bee6
+Kernel replay passed: BandSpectrum
+Axioms for ThetaTransfer.bandMellin_ne_zero_in_strip: propext, Classical.choice, Quot.sound
+Axioms for ThetaTransfer.bandMellin_phase: propext, Classical.choice, Quot.sound
