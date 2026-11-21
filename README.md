@@ -1,8 +1,8 @@
 # The sharp width for a prime deficit at every scale
 
-Assume the Riemann hypothesis (RH). Once the width parameter reaches $b_*=1.50342897722316\ldots$, the weighted sum of ordinary primes in $(y,b^2y)$ stays strictly below its main term for **every real scale $y>0$ and every real $b\ge b_*$**. This includes the critical width itself.
+Assume the Riemann hypothesis (RH). Once the width parameter reaches $b_\ast=1.50342897722316\ldots$, the weighted sum of ordinary primes in $(y,b^2y)$ stays strictly below its main term for **every real scale $y>0$ and every real $b\ge b_\ast$**. This includes the critical width itself.
 
-Below the cutoff, assume also that the distinct positive ordinates of the zeta zeros are linearly independent over the rationals. For each fixed $1<b<b_*$ the sum then passes above and below its main term arbitrarily far out. The threshold and this oscillation result were established in the [earlier transition theorem](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff).
+Below the cutoff, assume also that the distinct positive ordinates of the zeta zeros are linearly independent over the rationals. For each fixed $1<b<b_\ast$ the sum then passes above and below its main term arbitrarily far out. The threshold and this oscillation result were established in the [earlier transition theorem](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff).
 
 ## Which primes count
 
@@ -10,17 +10,17 @@ Every rational prime $p$ contributes $\log p$ times the weight below, with $t=p/
 
 $$
 W_b(t)=\begin{cases}
-b(1-1/t),&1<t\le b,\\
-b^2/t-1,&b<t<b^2,\\
+b(1-1/t),&1 < t\le b,\\
+b^2/t-1,&b < t < b^2,\\
 0,&\text{otherwise}.
 \end{cases}
 $$
 
-The deficit is $D_b(y)=b(b-1)y\log b-\sum_p(\log p)W_b(p/y)$. For each fixed $b\ge b_*$, strict positivity at every scale is equivalent to RH. The converse uses the classical one-sign criterion for Mellin transforms. [Proof, including the converse](PROOF.md)
+The deficit is $D_b(y)=b(b-1)y\log b-\sum_p(\log p)W_b(p/y)$. For each fixed $b\ge b_\ast$, strict positivity at every scale is equivalent to RH. The converse uses the classical one-sign criterion for Mellin transforms. [Proof, including the converse](PROOF.md)
 
 ## How the missing widths are covered
 
-Earlier work proved the all-scale inequality from $b_*$ through $1.51$. A positive sum of dilates expresses the deficit at $b^n$ in terms of deficits at $b$. This reduces the rest of the problem to $1.51\le b\le 2.27$. [Earlier critical-interval proof](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
+Earlier work proved the all-scale inequality from $b_\ast$ through $1.51$. A positive sum of dilates expresses the deficit at $b^n$ in terms of deficits at $b$. This reduces the rest of the problem to $1.51\le b\le 2.27$. [Earlier critical-interval proof](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
 
 | Scale on this width interval | Argument |
 |---|---|
