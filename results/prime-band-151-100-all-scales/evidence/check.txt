@@ -1,0 +1,9 @@
+Ordinary primes: 43786 positive knots through 100000, each deficit > 0.059.
+Prime squares: 34848 intervals cover [100000, 10000000000] with Q(y) > 0.11 sqrt(y).
+Positive phase gain > 0.020 using 40 certified zero pairs on 24000 closed cells in [11,35].
+L < 0.126. Q(y)/sqrt(y) > 0.107 for y >= 10^10 under RH.
+Full normalized deficit > 0.00003 for y >= 441000000000000 under RH.
+43,786 finite positive breakpoints; least certified grid deficit 0.059522699833 at y=200/151.
+34,848 prime-square intervals with Q(y) > 0.115 sqrt(y).
+24 disjoint xi-sign intervals. Lipschitz constant below 3.2 and every mesh lower bound above 0.0248.
+The phase gain is > 0.020 over the full closed interval [11,35].

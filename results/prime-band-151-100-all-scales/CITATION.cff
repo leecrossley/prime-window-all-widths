@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "Positivity at every scale for dilation 151/100"
+abstract: "Under RH the weighted ordinary-prime sum at dilation 151/100 stays strictly below its main term at every real scale. Includes two separate certificates."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-band-151-100-all-scales
+type: software
