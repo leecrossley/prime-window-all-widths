@@ -1,0 +1,4 @@
+500 isolated zero pairs. Degree 500000 and tilt 150000.
+The certified logarithmic upper density is below 10^(-232).
+500 xi-sign intervals and a zero count identify the first 500 zeros.
+The positive Bessel series and the original ramp confirm the 10^(-232) bound.
