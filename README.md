@@ -25,7 +25,7 @@ Put $b=3/2$. The weight $W(t)$ equals $b(1-1/t)$ for $1<t\le b$, $b^2/t-1$ for $
 
 | Range of $y$ | Why the inequality holds |
 |---|---|
-| $0<y\le10^5$ | Direct check at the 13,849 prime centres and the final endpoint. The deficit is concave in between. |
+| $0<y\le10^5$ | Direct check at the 13,848 prime centres and the final endpoint. The deficit is concave in between. |
 | $10^5\le y\le10^{10}$ | A tangent certificate on 34,728 intervals gives $Q(y)>0.11\sqrt y$. |
 | $10^{10}\le y\le10^{28}$ | Büthe's explicit bound for $\vartheta$ gives $Q(y)/\sqrt y>0.10$. |
 
@@ -35,7 +35,7 @@ The full argument is in [PROOF.md](PROOF.md).
 
 ## Verification
 
-The main program encloses the first 128 phase terms on 138,000 closed logarithmic intervals. On each interval their sum, with the square lower bound, exceeds $M+E$. The second program isolates 4,520 distinct zeros from sign changes of the completed zeta function. It bounds the remaining mass from the published sum of inverse squared ordinates, bounds the density integrals with a fourth-degree polynomial, and uses 160 phase terms with derivative bounds on 132,399 cells. Both programs also verify the prime-side breakpoints. Only the published analytic estimates and the published finite height enter from outside.
+The main program encloses the first 128 phase terms on 138,000 closed logarithmic intervals. On each interval their sum, with the square lower bound, exceeds $M+E$. The second program isolates 4,520 distinct zeros from sign changes of the completed zeta function. It bounds the remaining mass from the published sum of inverse squared ordinates, bounds the density integrals with a fourth-degree polynomial, and uses 160 phase terms with derivative bounds on 132,399 cells. Both programs also verify the prime-side breakpoints. Only the published analytic estimates, the published finite height and FLINT's certified zero isolation and counting enter from outside. The two programs implement the same written argument separately, so they share its analytic inputs.
 
 ```sh
 python -m pip install -r requirements.txt

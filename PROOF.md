@@ -76,7 +76,7 @@ $$
 
 ## The prime side and the continuous range
 
-For $y\le10^5$, $D$ is concave between adjacent centres $p/b$. Indeed $-W(p/y)$ only jumps upward in slope at $p/b$ and its other two slope jumps are downward. Checking the 13,849 centres and final endpoint gives strict positivity. At zero the extension equals zero, which covers the first open interval by concavity.
+For $y\le10^5$, $D$ is concave between adjacent centres $p/b$. Indeed $-W(p/y)$ only jumps upward in slope at $p/b$ and its other two slope jumps are downward. Checking the 13,848 centres and the final endpoint gives strict positivity. At zero the extension equals zero, which covers the first open interval by concavity.
 
 For $10^5\le y\le10^{10}$ the prime-square sum is affine between consecutive squared-prime breakpoints $y=p^2/b^2,p^2/b,p^2$. An affine upper tangent to $\sqrt y$ on each of 34,728 intervals gives $Q(y)>0.11\sqrt y$ there. For larger $y$, write $x=\sqrt y$, $B=2\sqrt b(\sqrt b-1)^2$ and $V_2=2\sqrt b(b-1)$. Integration by parts against $W(v^2)$ gives
 
