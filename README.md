@@ -49,9 +49,9 @@ $$
 at the 16 cuts $0.80,0.85,0.86,\ldots,0.99$. The certificates round their Table 1 constants upward. With $h=\log H$ and $t=He^v$, use $(1+v/h)^q\le e^{qv/h}$. Thus
 
 $$
-U_\sigma=\min\left\{\frac{V(H)}2,\
+U_\sigma=\min\left\lbrace\frac{V(H)}2,\
 \frac{2A_\sigma H^{p-2}h^q}{2-p-q/h}+
-\frac{2C_\sigma H^{-2}h^2}{2-2/h}\right\}\ \ge S_\sigma .
+\frac{2C_\sigma H^{-2}h^2}{2-2/h}\right\rbrace\ \ge S_\sigma .
 $$
 
 The first bound uses reflection $\beta+i\tau\leftrightarrow1-\beta+i\tau$ at the same height. At most half of the mass lies strictly right of $1/2$. [Kadiri–Lumley–Ng, equation (1.7) and Table 1](https://www.cs.uleth.ca/~kadiri/articles/Explicit-zero-density-for-the-Riemann-zeta-function-JMAA-May2018.pdf)
