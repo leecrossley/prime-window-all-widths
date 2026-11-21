@@ -7,7 +7,7 @@ M_b=b(b-1)\log b,\qquad
 D_b(y)=M_by-\sum_p(\log p)W_b(p/y).
 $$
 
-Here $b>1$, $y>0$ and $W_b(t)$ equals $b(1-1/t)$ on $1<t\le b$, $b^2/t-1$ on $b<t<b^2$, and zero elsewhere. Both exterior endpoints have weight zero. We prove under RH that $D_b(y)>0$ simultaneously for all $b\ge b_*$ and $y>0$. The root $b_*$ is defined below.
+Here $b>1$, $y>0$ and $W_b(t)$ equals $b(1-1/t)$ on $1<t\le b$, $b^2/t-1$ on $b<t<b^2$, and zero elsewhere. Both exterior endpoints have weight zero. We prove under RH that $D_b(y)>0$ simultaneously for all $b\ge b_\ast$ and $y>0$. The root $b_\ast$ is defined below.
 
 ## The zero mass
 
@@ -34,7 +34,7 @@ L_b=\sum_\rho |H_b(\rho)|
     =\sum_\rho\frac{r(b+1-2r\cos(\tau\log b))}{1/4+\tau^2}.
 $$
 
-The phase of $H_b(\rho)$ is $e^{i\tau\log b}$. In the specified range $1<b\le 2.27$ let $R(b)=(b/2-1)_+\log 2$, where $x_+=\max(x,0)$. The single-scale von Mangoldt ramp gives
+The phase of $H_b(\rho)$ is $e^{i\tau\log b}$. In the specified range $1<b\le 2.27$ let $R(b)=\max(b/2-1,0)\log 2$, where $x_+=\max(x,0)$. The single-scale von Mangoldt ramp gives
 
 $$
 \frac{L_b}{r}=(b+1)\log(b+1)-(b-1)\log(b-1)+2(b-1)\log b
@@ -49,7 +49,7 @@ S(b)=R(b)+b(1+\gamma-\log b)-\log(2\pi)
 L_b=r[(b+1)C_0-2S(b)] .
 $$
 
-Here 2 is the only prime power where the ramp can change slope below 2.27. Summing the elementary trivial-zero series gives the preceding closed form. The earlier transition theorem proves the unique zero $b_*>1$ of $B_b-L_b$, encloses it in $(1.50342897722316,1.50342897722317)$ and proves $B_b-L_b<0$ below it. Under RH and rational independence of the **distinct** positive ordinates, finite simultaneous phase approximation then gives both signs arbitrarily late at each fixed $1<b<b_*$. At equality the normalized liminf is zero under those hypotheses. The earlier critical-interval theorem proves strict positivity at every scale for $b_*\le b\le1.51$, including equality. We use these results at their cited revisions. [Transition and oscillation](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff) · [Critical interval](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
+Here 2 is the only prime power where the ramp can change slope below 2.27. Summing the elementary trivial-zero series gives the preceding closed form. The earlier transition theorem proves the unique zero $b_\ast>1$ of $B_b-L_b$, encloses it in $(1.50342897722316,1.50342897722317)$ and proves $B_b-L_b<0$ below it. Under RH and rational independence of the **distinct** positive ordinates, finite simultaneous phase approximation then gives both signs arbitrarily late at each fixed $1<b<b_\ast$. At equality the normalized liminf is zero under those hypotheses. The earlier critical-interval theorem proves strict positivity at every scale for $b_\ast\le b\le1.51$, including equality. We use these results at their cited revisions. [Transition and oscillation](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff) · [Critical interval](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
 
 ## Small scales
 
@@ -97,7 +97,7 @@ $$
 Each $n=p^j$ contributes $\log p$ at $p^{2j}$ exactly once. The Mellin transform of $u\mapsto W_b(u^2)$ is $K_b(s)=H_b(s/2)/2$. Its pole main term in the explicit formula is $xK_b(1)=B_b\sqrt y$. On RH,
 
 $$
-|K_b(\rho)|=\frac{2|(b^{\rho/2}-1)(b^{\rho/2}-b)|}{|\rho|\,|\rho-2|}
+|K_b(\rho)|=\frac{2|(b^{\rho/2}-1)(b^{\rho/2}-b)|}{|\rho|\thinspace|\rho-2|}
 \le \frac{2(b^{1/4}+1)(b^{1/4}+b)}{|\rho|^2}.
 $$
 
@@ -111,13 +111,13 @@ The certified gap $0.003$ and substitution at $y=10^{10}$ leave more than $0.000
 
 ## Passing to every width
 
-Let $T f(y)=f(by)$ and $R_p(y)=\sum_p(\log p)(y/p-1)_+$. A single prime contributes its tent to $(T-1)(T-b)R_p$, including all boundary cases. Acting on $y\log y$ gives $M_b y$. Thus $D_b=(T-1)(T-b)(y\log y-R_p(y))$. Factor $T^n-1$ and $T^n-b^n$ to get
+Let $T f(y)=f(by)$ and $R_p(y)=\sum_p(\log p)\max(y/p-1,0)$. A single prime contributes its tent to $(T-1)(T-b)R_p$, including all boundary cases. Acting on $y\log y$ gives $M_b y$. Thus $D_b=(T-1)(T-b)(y\log y-R_p(y))$. Factor $T^n-1$ and $T^n-b^n$ to get
 
 $$
 D_{b^n}(y)=\sum_{j,k=0}^{n-1} b^{n-1-k}D_b(b^{j+k}y),\qquad n\ge1 .
 $$
 
-Every coefficient is positive. For any $B\ge b_*$ take $n=\lfloor\log B/\log b_*\rfloor$. Then $1\le n\le\log B/\log b_*<n+1\le2n$, so $b=B^{1/n}$ belongs to $[b_*,b_*^2]$. The root enclosure gives $b_*^2<2.27$. The critical-interval theorem and the three scale ranges above cover this base interval. The identity therefore proves strict positivity at the original width $B$ for every $y>0$.
+Every coefficient is positive. For any $B\ge b_\ast$ take $n=\lfloor\log B/\log b_\ast\rfloor$. Then $1\le n\le\log B/\log b_\ast<n+1\le2n$, so $b=B^{1/n}$ belongs to $[b_\ast,b_\ast^2]$. The root enclosure gives $b_\ast^2<2.27$. The critical-interval theorem and the three scale ranges above cover this base interval. The identity therefore proves strict positivity at the original width $B$ for every $y>0$.
 
 ## Converse and comparisons
 
