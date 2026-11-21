@@ -1,0 +1,12 @@
+{
+  "title": "Ordinary-prime windows, transitions and reversal densities",
+  "creators": [
+    {
+      "name": "Crossley, Lee"
+    }
+  ],
+  "description": "<p>This collection contains the sharp all-scale width under RH, the finite certificates at width 3/2 and the reversal-density estimates. Each paper states its range and whether its density estimate also uses rational independence of zero ordinates.</p><p><a href=\"https://github.com/leecrossley/prime-window-all-widths/blob/b4973bd37737f96f2ac81e5b93e4b5bcd2b0b33d/RESULTS.md\">Proofs and verification</a>.</p>",
+  "license": "cc-by-4.0",
+  "upload_type": "software",
+  "version": "collection-2026-11-21"
+}
