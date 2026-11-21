@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The three-halves prime deficit through 100,000"
+abstract: "An unconditional exact certificate for a strict ordinary-prime inequality at every real scale through 100,000."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-band-three-halves-finite
+type: software

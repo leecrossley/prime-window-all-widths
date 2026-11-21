@@ -1,0 +1,1 @@
+At b=3/2, certified strict sign at all 900000 grid endpoints and by linearity for 0 < y <= 100000.
