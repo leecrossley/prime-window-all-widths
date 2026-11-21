@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The sharp width for a prime deficit at every scale"
+abstract: "The sharp all-scale width for a weighted sum over ordinary primes, conditional on RH."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-window-all-widths
+type: software
