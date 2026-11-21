@@ -1,5 +1,7 @@
 # How rare is a reversal in the three-halves prime window?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410815.svg)](https://doi.org/10.5281/zenodo.24410815)
+
 At dilation $b=3/2$, a reversal is a scale $y$ where the weighted sum of primes between $y$ and $2.25y$ overshoots its predicted size. Assuming the Riemann hypothesis (RH), this repository shows that reversals are extraordinarily rare: in the long run they occupy less than $10^{-232}$ of the logarithmic scale.
 
 The bound needs RH alone, with no independence assumption on the zeta zeros, and it rests on a finite calculation with the first 500 zeros. It limits how often reversals can happen without saying whether one ever does. Whether any reversal occurs under RH alone remains open here, and the bound gives no location for the first one.
