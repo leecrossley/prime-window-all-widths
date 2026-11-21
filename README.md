@@ -28,16 +28,16 @@ All logarithms are natural.
 
 ## How the proof goes
 
-1. Under RH the normalised deficit $D_b(y)/\sqrt y$ is $-\Delta$ plus a sum of non-negative terms $a_\tau[1+\cos(\tau\log(by))]$ over the zeta zeros, up to $o(1)$. At $b=3/2$, $0<\Delta<0.00163$.
-2. A reversal therefore forces the terms from the first 500 zeros to add up to at most $\Delta$, since the rest are non-negative. An exponential bound with $\lambda=150000$ turns this into the time average of a product of 500 factors.
-3. Each factor is bounded by a trigonometric polynomial of degree $500000$. Best and Trudgian's computation shows that the first 500 ordinates satisfy no integer relation with coefficients that small, so the average of the product is the product of the constant terms.
-4. Each constant term is at most $e^{-u}I_0(u)$, a Bessel function value, and the certified product is below $10^{-232}$.
+1. Under RH the normalised deficit $D_b(y)/\sqrt y$ is $-\Delta$ plus a sum of non-negative terms $a_\tau[1+\cos(\tau\log(by))]$ over the zeta zeros, up to $o(1)$. Here the $a_\tau>0$ are explicit summable coefficients with sum $L$, and $\Delta=L-2\sqrt b(\sqrt b-1)^2$. [PROOF.md](PROOF.md) gives the formulas. At $b=3/2$, $0<\Delta<0.00163$.
+2. For every $\varepsilon>0$, a reversal at sufficiently large $y$ therefore forces the terms from the first 500 zeros to add up to at most $\Delta+\varepsilon$, since the rest are non-negative. An exponential bound with $\lambda=150000$ turns this into $e^{\lambda(\Delta+\varepsilon)}$ times the time average of a product of 500 factors.
+3. Each factor is bounded by a trigonometric polynomial of degree $500000$. Best and Trudgian's computation shows that the first 500 ordinates satisfy no nonzero integer relation with coefficients that small, so the average of the product is the product of the constant terms.
+4. Each constant term is at most $e^{-u_j}I_0(u_j)$, a Bessel function value, where $u_j=\tfrac d2(1-e^{-2\lambda a_{\tau_j}/d})$ for the $j$-th positive ordinate $\tau_j$ and $d=500000$. Letting $\varepsilon\downarrow0$, the upper logarithmic density is at most $e^{\lambda\Delta}\prod_{j=1}^{500}e^{-u_j}I_0(u_j)$, and the programs certify that this bound is below $10^{-232}$.
 
 The full argument is in [PROOF.md](PROOF.md).
 
 ## Verification
 
-The first program encloses 500 zero ordinates and evaluates the scaled Bessel function in ball arithmetic. The second verifies a sign change of the completed zeta function in 500 disjoint intervals and checks the zero count above them. It computes $L$ from the original ramp and an enclosed positive tail. It bounds each scaled Bessel factor by its positive power series with a geometric remainder. Both programs use FLINT. Best and Trudgian's lattice computation is an input from the cited paper.
+The first program encloses 500 zero ordinates and evaluates the scaled Bessel function in ball arithmetic. The second verifies a sign change of the completed zeta function in 500 disjoint intervals and checks the zero count above them. It computes $L$ from the original ramp and an enclosed positive tail. It bounds each scaled Bessel factor by its positive power series with a geometric remainder. Both programs use FLINT. Best and Trudgian's lattice computation is an input from the cited paper. [Best and Trudgian, Appendix A, Table 2](https://arxiv.org/pdf/1209.3843#page=13)
 
 ```sh
 python -m pip install -r requirements.txt
