@@ -23,6 +23,6 @@ Run `sh verify-collection.sh` from the repository root to check the result manif
 
 ## Review discussions at import
 
-GitHub shows the current status and subsequent replies at each original link.
+GitHub shows the current status and subsequent replies at each original link. Review notes posted from the author’s account record checks made by or for the author. They are not independent referee reports.
 
 - [prime-window-all-widths issue 5](https://github.com/leecrossley/prime-window-all-widths/issues/5) — Clarify who performed the checks in earlier review notes
