@@ -5,7 +5,7 @@ abstract: "The sharp all-scale width for a weighted sum over ordinary primes, co
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.2
+version: 1.0.3
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/prime-window-all-widths
 type: software
