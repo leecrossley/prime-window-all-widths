@@ -1,0 +1,6 @@
+13849 ordinary-prime centres and endpoints, 34728 square intervals.
+649 certified ordinates and 16 zero-density cuts bound all uncomputed zeros.
+138000 closed logarithmic cells verify every scale from 10^5 to 10^28.
+Trial-divided primes, 13849 centres and 34728 independent square tangents.
+4520 sign changes, the full inverse-square sum and polynomial density integrals passed.
+132399 midpoint derivative enclosures confirm positivity through 10^28.

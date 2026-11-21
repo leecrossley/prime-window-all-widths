@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The three-halves prime window through 10^28"
+abstract: "An unconditional inequality for a weighted sum over ordinary primes at every real scale up to 10^28, with two reproducible certificates."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.4
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/three-halves-prime-window-1e28
+type: software
