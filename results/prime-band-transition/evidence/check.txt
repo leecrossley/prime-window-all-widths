@@ -1,0 +1,4 @@
+F(1.50342897722316) < -1.28e-15; F(1.50342897722317) > 2.59e-15.
+F'(2) > 0.209; P(sqrt(2)) < -5.
+The coarse positive margin at 2 exceeds 0.0126 after division by sqrt(b)*(sqrt(b)+1)^2.
+The 78-term trivial-zero series and exact rational interval arithmetic confirm both endpoint signs.
