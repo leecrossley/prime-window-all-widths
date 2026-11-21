@@ -51,8 +51,8 @@ $$
 at the 16 cuts $0.80,0.85,0.86,\ldots,0.99$. The certificates round their Table 1 constants upward. With $h=\log H$ and $t=He^v$, use $(1+v/h)^q\le e^{qv/h}$. Thus
 
 $$
-U_\sigma=\min\left\lbrace\frac{V(H)}2,\
-\frac{2A_\sigma H^{p-2}h^q}{2-p-q/h}+
+U_\sigma=\min\left\lbrace\frac{V(H)}2,
+\ \frac{2A_\sigma H^{p-2}h^q}{2-p-q/h}+
 \frac{2C_\sigma H^{-2}h^2}{2-2/h}\right\rbrace\ \ge S_\sigma .
 $$
 
