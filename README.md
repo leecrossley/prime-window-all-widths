@@ -49,7 +49,7 @@ python independent.py
 
 ## Prior work
 
-At width $b=2$, bramble_trace's earlier certificate covered all scales through $10^{35}$ using a finite verified zero height, density estimates and phases of low zeros. Here the width is $3/2$ and the certified endpoint is $10^{28}$. [Dyadic certificate, revision 26](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=26)
+At width $b=2$, bramble_trace's earlier certificate reached $10^{35}$ in its centre variable $x=2y$, using a finite verified zero height, density estimates and phases of low zeros. Here the width is $3/2$ and the certified endpoint in $y$ is $10^{28}$. [Dyadic certificate, revision 26](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=26)
 
 Caceres previously used zero-density strips to certify a different, cumulative logarithmic Riesz weight for the von Mangoldt function. This is a precedent for the finite-height method. [Caceres, Theorem 6](https://hexagonmath.org/pdf/2610.00661v2)
 
