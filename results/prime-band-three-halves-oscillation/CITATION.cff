@@ -10,3 +10,12 @@ license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-oscillation
 doi: 10.5281/zenodo.24410828
 type: software
+references:
+  - type: software
+    title: "Ordinary-prime windows, transitions and reversal densities"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "collection-2026-11-21"
+    doi: 10.5281/zenodo.24426576
+    url: https://github.com/leecrossley/prime-window-all-widths/releases/tag/collection-2026-11-21
