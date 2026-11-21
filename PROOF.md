@@ -2,6 +2,14 @@
 
 This is the full argument behind the [summary](README.md).
 
+## Statement
+
+Assume the Riemann hypothesis and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros. The $3/2$ weighted prime window overshoots its main term on a set with logarithmic density $\delta$ satisfying
+
+$$10^{-10000}<\delta<10^{-1012}.$$
+
+Below, the independence hypothesis means this rational linear independence.
+
 ## Setup
 
 Fix $b=3/2$. Give each ordinary prime $p$ weight $(\log p)W_b(p/y)$, where
