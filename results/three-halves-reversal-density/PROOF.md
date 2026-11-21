@@ -48,7 +48,7 @@ L=\sqrt b\left[(b+1)\log(b+1)-(b-1)\log(b-1)+2(b-1)\log b
 -2b\log 2-(b-1)(\gamma+\log\pi)\right],
 $$
 
-where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 Under the independence hypothesis, Kronecker's theorem gives uniform distribution for any finite vector of distinct phases modulo $2\pi$ as $\log(by)$ ranges over an interval of increasing length. Group repeated ordinates, assigning their full multiplicity to the coefficient. The positive coefficients are summable, hence finite sums approximate the full sum uniformly. Its limiting distribution is that of $-\Delta+\sum a_\tau(1+\cos\Theta_\tau)$, with independent uniform angles for the distinct ordinates and the indicated multiplicity in each coefficient. This distribution has no atom at zero. Conditioning on the other angles leaves one nonconstant cosine with a continuous distribution. Approximation of the sign indicator by continuous functions now gives $\delta=\lim_{X\to\infty}d(X)$, even with the $o(1)$ term in the explicit formula. [Rubinstein and Sarnak's prime-race framework](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf)
 

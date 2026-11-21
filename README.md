@@ -6,7 +6,7 @@
 
 Assume the Riemann hypothesis (RH). Once the width parameter reaches $b_\ast=1.50342897722316\ldots$, the weighted sum of ordinary primes in $(y,b^2y)$ stays strictly below its main term for **every real scale $y>0$ and every real $b\ge b_\ast$**. This includes the critical width itself.
 
-Below the cutoff, assume also that the distinct positive ordinates of the zeta zeros are linearly independent over the rationals. For each fixed $1<b<b_\ast$ the sum then passes above and below its main term arbitrarily far out. The threshold and this oscillation result were established in the [earlier transition theorem](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff).
+Below the cutoff, assume also that the distinct positive ordinates of the zeta zeros are linearly independent over the rationals. For each fixed $1<b<b_\ast$ the sum then passes above and below its main term arbitrarily far out. The threshold and this oscillation result were established in the [earlier transition theorem](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-transition).
 
 ## Which primes count
 
@@ -24,7 +24,7 @@ The deficit is $D_b(y)=b(b-1)y\log b-\sum_p(\log p)W_b(p/y)$. For each fixed $b\
 
 ## How the missing widths are covered
 
-Earlier work proved the all-scale inequality from $b_\ast$ through $1.51$. A positive sum of dilates expresses the deficit at $b^n$ in terms of deficits at $b$. This reduces the rest of the problem to $1.51\le b\le 2.27$. [Earlier critical-interval proof](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
+Earlier work proved the all-scale inequality from $b_\ast$ through $1.51$. A positive sum of dilates expresses the deficit at $b^n$ in terms of deficits at $b$. This reduces the rest of the problem to $1.51\le b\le 2.27$. [Earlier critical-interval proof](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-critical-all-scales)
 
 | Scale on this width interval | Argument |
 |---|---|
@@ -38,7 +38,7 @@ Grenié and Molteni used the same centered kernel. The observable is a three-poi
 
 ## Related results
 
-The dyadic converse has a Lean proof. Below the critical width, the $3/2$ calculation certifies positivity up to $10^{28}$. RH alone bounds the upper logarithmic density of later reversals, and RH with linear independence gives bounds on their density. [Dyadic converse](https://github.com/leecrossley/prime-window-rh-criterion) [Finite range](https://github.com/leecrossley/three-halves-prime-window-1e28) [Upper density](https://github.com/leecrossley/three-halves-reversal-upper-density) [Density under independence](https://github.com/leecrossley/three-halves-reversal-density)
+The dyadic converse has a Lean proof. Below the critical width, the $3/2$ calculation certifies positivity up to $10^{28}$. RH alone bounds the upper logarithmic density of later reversals, and RH with linear independence gives bounds on their density. [Dyadic converse](https://github.com/leecrossley/prime-window-rh-criterion) [Finite range](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/three-halves-prime-window-1e28) [Upper density](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/three-halves-reversal-upper-density) [Density under independence](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/three-halves-reversal-density)
 
 ## Reproduce the verification
 

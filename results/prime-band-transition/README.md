@@ -16,7 +16,7 @@ $$1.50342897722316 < b_\ast < 1.50342897722317.$$
 |---|---|
 | $b>b_\ast$ | Under RH, $D_b(y)>0$ for all sufficiently large $y$. |
 | $1<b<b_\ast$ | Under RH and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, both signs occur arbitrarily far out. |
-| $b=b_\ast$ | Under RH, $D_b(y)>0$ for every real $y>0$. With the independence hypothesis the normalised liminf is zero. [Critical-width proof](https://github.com/leecrossley/prime-band-critical-all-scales/blob/99f0a80a6f332a43942344c470ab410eba0eb2f7/README.md) |
+| $b=b_\ast$ | Under RH, $D_b(y)>0$ for every real $y>0$. With the independence hypothesis the normalised liminf is zero. [Critical-width proof](https://github.com/leecrossley/prime-window-all-widths/blob/main/results/prime-band-critical-all-scales/README.md) |
 
 For $b>1$ and $y>0$, let
 
@@ -41,7 +41,7 @@ The prime-square drift is $B_b=2\sqrt b(\sqrt b-1)^2$ and the total absolute zer
 4. Certified opposite signs of $F$ at the two ends of the displayed bracket show that this zero exists and lies in the bracket.
 5. For $b\ge2$ a coefficient bound gives $B_b-L_b>0$ directly.
 
-The derivation is in [PROOF.md](PROOF.md). The series, drift and phase argument behind step 1 are in [prime-band-extrema](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1).
+The derivation is in [PROOF.md](PROOF.md). The series, drift and phase argument behind step 1 are in [prime-band-extrema](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema).
 
 ## Prior work and scope
 

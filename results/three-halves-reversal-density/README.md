@@ -4,7 +4,7 @@
 
 At dilation $b=3/2$, a reversal is a scale $y$ where the weighted sum of primes between $y$ and $2.25y$ overshoots its predicted size. Assuming the Riemann hypothesis (RH) and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, reversals have a well-defined logarithmic density $\delta$, and this repository pins it between $10^{-10000}$ and $10^{-1012}$.
 
-The lower bound shows that, under these hypotheses, reversals occupy a positive proportion of the logarithmic scale. The upper bound shows how small that proportion is. A [companion repository](https://github.com/leecrossley/three-halves-reversal-upper-density/tree/v1.0.0) bounds the upper logarithmic density by $10^{-232}$ under RH alone. Neither result locates the first reversal.
+The lower bound shows that, under these hypotheses, reversals occupy a positive proportion of the logarithmic scale. The upper bound shows how small that proportion is. A [companion repository](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/three-halves-reversal-upper-density) bounds the upper logarithmic density by $10^{-232}$ under RH alone. Neither result locates the first reversal.
 
 ## Statement
 
@@ -53,4 +53,4 @@ python independent.py
 
 ## Prior work
 
-The existence argument belongs to the classical theory of prime races. Lamzouri studied large deviations for prime number races, and Zhao studied oscillation and bias for integrals of Mertens errors. The earlier result for this window establishes recurring conditional reversals. These two quantitative bounds apply to the specific $3/2$ ordinary-prime window. The literature checked yielded no earlier numerical interval for its reversal density. [Lamzouri](https://arxiv.org/abs/1103.0060), [Zhao](https://arxiv.org/html/2411.18903v2), [Earlier oscillation statement](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
+The existence argument belongs to the classical theory of prime races. Lamzouri studied large deviations for prime number races, and Zhao studied oscillation and bias for integrals of Mertens errors. The earlier result for this window establishes recurring conditional reversals. These two quantitative bounds apply to the specific $3/2$ ordinary-prime window. The literature checked yielded no earlier numerical interval for its reversal density. [Lamzouri](https://arxiv.org/abs/1103.0060), [Zhao](https://arxiv.org/html/2411.18903v2), [Earlier oscillation statement](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-oscillation)

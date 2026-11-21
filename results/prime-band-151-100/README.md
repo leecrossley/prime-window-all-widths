@@ -22,21 +22,21 @@ For $b>1$ and $y>0$:
 
 ## Proof
 
-The general extremal bound gives $\liminf D_b(y)/\sqrt y\ge B_b-L_b$ under RH. [Derivation of the general extremal formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+The general extremal bound gives $\liminf D_b(y)/\sqrt y\ge B_b-L_b$ under RH. [Derivation of the general extremal formula](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 Since $b\le2$, the ramp term $R(b)=\sum_n\Lambda(n)(b/n-1)_+$ of the general formula vanishes, so the closed formula uses only logarithms, $\pi$, Euler's constant and $\sqrt b$. The executable encloses these quantities with rational endpoints and proves $B_b-L_b>3/1000$. Numerically the endpoint is about $0.00312999$.
 
 ## Verification
 
-The executable certifies the strict numerical inequality. The asymptotic implication uses the written explicit-formula argument. A later proof gives strict positivity for every real $y>0$ at this dilation under RH. [All-scale proof](https://github.com/leecrossley/prime-band-151-100-all-scales/blob/ce7d8f07b426e529c47c6748a5c919faf3d7d8cb/README.md)
+The executable certifies the strict numerical inequality. The asymptotic implication uses the written explicit-formula argument. A later proof gives strict positivity for every real $y>0$ at this dilation under RH. [All-scale proof](https://github.com/leecrossley/prime-window-all-widths/blob/main/results/prime-band-151-100-all-scales/README.md)
 
 ```sh
 bash verify-release.sh
 ```
 
-This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://github.com/leecrossley/prime-band-151-100/releases/latest)
+This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://doi.org/10.5281/zenodo.24410883)
 
 ## Related results
 
-- [Positivity at every scale for this dilation](https://github.com/leecrossley/prime-band-151-100-all-scales/tree/v1.0.1)
-- [Conditional oscillation at three halves](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
+- [Positivity at every scale for this dilation](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-151-100-all-scales)
+- [Conditional oscillation at three halves](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-oscillation)

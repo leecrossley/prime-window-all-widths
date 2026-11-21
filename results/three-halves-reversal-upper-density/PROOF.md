@@ -40,7 +40,7 @@ L=\sqrt b\left[(b+1)\log(b+1)-(b-1)\log(b-1)+2(b-1)\log b
 -2b\log 2-(b-1)(\gamma+\log\pi)\right],
 $$
 
-where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.1)
+where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-extrema)
 
 Let $\tau_1,\ldots,\tau_{500}$ be the first 500 positive ordinates and put $S(t)=\sum_{j=1}^{500}a_{\tau_j}(1+\cos(\tau_j t))$. For every $\varepsilon>0$, a reversal at sufficiently large $y$ gives $S(\log(by))\le\Delta+\varepsilon$. For $\lambda>0$ this bounds its indicator above by $e^{\lambda(\Delta+\varepsilon)}e^{-\lambda S(\log(by))}$. The average for the variable $t=\log(by)$ is the usual average over an interval of length $\log X$.
 

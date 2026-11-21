@@ -38,8 +38,8 @@ The executable checks all 900,000 positive endpoints, using integer and rational
 bash verify-release.sh
 ```
 
-This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://github.com/leecrossley/prime-band-three-halves-finite/releases/latest)
+This checks the [SHA-256 manifest](SHA256SUMS), reruns the arithmetic and compares its output with the [recorded result](evidence/check.txt). It needs Python 3.9 or later and only the standard library. The recorded run used Python 3.9.6 on arm64 macOS. [Latest release](https://doi.org/10.5281/zenodo.24410830)
 
 ## Related result
 
-[Conditional oscillation at the same dilation](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
+[Conditional oscillation at the same dilation](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-three-halves-oscillation)
