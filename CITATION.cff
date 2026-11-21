@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "Two-sided density bounds for reversals of the three-halves prime window"
+abstract: "Under RH and linear independence of the positive zeta ordinates, the logarithmic density of reversals lies between 10^(-10000) and 10^(-1012)."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/three-halves-reversal-density
+type: software
