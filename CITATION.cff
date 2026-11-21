@@ -5,7 +5,7 @@ abstract: "An unconditional inequality for a weighted sum over ordinary primes a
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.3
+version: 1.0.4
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/three-halves-prime-window-1e28
 type: software
