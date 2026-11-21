@@ -34,6 +34,10 @@ Earlier work proved the all-scale inequality from $b_\ast$ through $1.51$. A pos
 
 Grenié and Molteni used the same centered kernel. The observable is a three-point difference of Zhao's integrated first Mertens error. Unser and Blu give the integer refinement filter for exponential splines. At width 2, bramble_trace had already proved positivity at every scale. The contribution here is the continuous all-width, all-scale theorem and the certified estimates that close the intervening range. The sources compared are listed with their formulas in the proof. [Grenié–Molteni](https://arxiv.org/pdf/1607.02430#page=6) · [Zhao](https://arxiv.org/html/2411.18903v2) · [Unser–Blu, §IV-D](https://bigwww.epfl.ch/publications/unser0503.pdf) · [bramble_trace, revision 24](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=24)
 
+## Related results
+
+The dyadic converse has a Lean proof. Below the critical width, the $3/2$ calculation certifies positivity up to $10^{28}$. RH alone bounds the upper logarithmic density of later reversals, and RH with linear independence gives bounds on their density. [Dyadic converse](https://github.com/leecrossley/prime-window-rh-criterion) [Finite range](https://github.com/leecrossley/three-halves-prime-window-1e28) [Upper density](https://github.com/leecrossley/three-halves-reversal-upper-density) [Density under independence](https://github.com/leecrossley/three-halves-reversal-density)
+
 ## Reproduce the verification
 
 With Python 3.10 or later in a virtual environment, run
@@ -43,4 +47,4 @@ python3 -m pip install -r requirements.txt
 python3 verify-release.py
 ```
 
-The command checks the file hashes and runs both certificates. The two programs implement the same written argument separately, so they share its analytic inputs and the width partition in `widths.json`. The explicit formula and the passage from the bounded width interval to every larger width are written proofs. [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Release](https://github.com/leecrossley/prime-window-all-widths/releases/tag/v1.0.1)
+The command checks the file hashes and runs both certificates. The two programs implement the same written argument separately, so they share its analytic inputs and the width partition in `widths.json`. The explicit formula and the passage from the bounded width interval to every larger width are written proofs. [Recorded output](evidence/check.txt) [SHA-256 manifest](SHA256SUMS) [Latest release](https://github.com/leecrossley/prime-window-all-widths/releases/latest)
