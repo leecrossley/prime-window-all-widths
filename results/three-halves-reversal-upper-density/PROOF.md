@@ -55,8 +55,8 @@ majorizes $e^{-v_j(1+\cos\theta)}$. It has Fourier degree at most $d$. Best and 
 Since $1-c_jq\le e^{-c_jq}$, each constant coefficient is at most $e^{-u_j}I_0(u_j)$, where $I_0(u)$ is the circle average of $e^{u\cos\theta}$. Taking the upper limit, then letting $\varepsilon\downarrow0$, gives
 
 $$
-\limsup_{X\to\infty}d(X)\ \le\
- e^{\lambda\Delta}\prod_{j=1}^{500} e^{-u_j}I_0(u_j)
+\limsup_{X\to\infty}d(X)\ \le
+ \ e^{\lambda\Delta}\prod_{j=1}^{500} e^{-u_j}I_0(u_j)
  \ <\ 10^{-232}.
 $$
 
