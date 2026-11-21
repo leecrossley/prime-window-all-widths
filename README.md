@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410881.svg)](https://doi.org/10.5281/zenodo.24410881)
 
+Published edition 1.1.0 has DOI [10.5281/zenodo.24416358](https://doi.org/10.5281/zenodo.24416358). The [edition index](RESULTS.md#edition-dois) lists the other papers.
+
 **Research collection.** [Browse all results on ordinary-prime windows](RESULTS.md), including proofs, certificates and original citations.
 
 Assume the Riemann hypothesis (RH). Once the width parameter reaches $b_\ast=1.50342897722316\ldots$, the weighted sum of ordinary primes in $(y,b^2y)$ stays strictly below its main term for **every real scale $y>0$ and every real $b\ge b_\ast$**. This includes the critical width itself.
