@@ -1,6 +1,12 @@
 # How rare is a reversal in the three-halves prime window?
 
-Assuming the Riemann hypothesis, the upper logarithmic density of reversals is less than $10^{-232}$. A finite theorem on the first 500 zeta zeros suffices. Whether any reversal occurs under RH alone remains open here.
+At dilation $b=3/2$, a reversal is a scale $y$ where the weighted sum of primes between $y$ and $2.25y$ overshoots its predicted size. Assuming the Riemann hypothesis (RH), this repository shows that reversals are extraordinarily rare: in the long run they occupy less than $10^{-232}$ of the logarithmic scale.
+
+The bound needs RH alone, with no independence assumption on the zeta zeros, and it rests on a finite calculation with the first 500 zeros. It limits how often reversals can happen without saying whether one ever does. Whether any reversal occurs under RH alone remains open here, and the bound gives no location for the first one.
+
+## Statement
+
+Assuming the Riemann hypothesis, the upper logarithmic density of reversals is less than $10^{-232}$.
 
 Fix $b=3/2$. Give each ordinary prime $p$ weight $(\log p)W_b(p/y)$, where
 
@@ -20,49 +26,16 @@ $$
 
 All logarithms are natural.
 
-## The finite test
+## How the proof goes
 
-Under RH the weighted explicit formula and the ordinary-prime square term give
+1. Under RH the normalised deficit $D_b(y)/\sqrt y$ is $-\Delta$ plus a sum of non-negative terms $a_\tau[1+\cos(\tau\log(by))]$ over the zeta zeros, up to $o(1)$. At $b=3/2$, $0<\Delta<0.00163$.
+2. A reversal therefore forces the terms from the first 500 zeros to add up to at most $\Delta$, since the rest are non-negative. An exponential bound with $\lambda=150000$ turns this into the time average of a product of 500 factors.
+3. Each factor is bounded by a trigonometric polynomial of degree $500000$. Best and Trudgian's computation shows that the first 500 ordinates satisfy no integer relation with coefficients that small, so the average of the product is the product of the constant terms.
+4. Each constant term is at most $e^{-u}I_0(u)$, a Bessel function value, and the certified product is below $10^{-232}$.
 
-$$
-\frac{D_b(y)}{\sqrt y}=-\Delta+
-  \sum_{\tau>0}a_\tau[1+\cos(\tau\log(by))]+o(1),
-\qquad
-a_\tau=\frac{2\sqrt b\thinspace[b+1-2\sqrt b\cos(\tau\log b)]}{1/4+\tau^2}.
-$$
+The full argument is in [PROOF.md](PROOF.md).
 
-The sum counts conjugate pairs with multiplicity. The coefficients are positive and summable. Write $B=2\sqrt b(\sqrt b-1)^2$, $L=\sum_{\tau>0}a_\tau$ and $\Delta=L-B$. At $b=3/2$ we have $0<\Delta<0.00163$. A closed expression for this mass at $1<b\le2$ is
-
-$$
-L=\sqrt b\left[(b+1)\log(b+1)-(b-1)\log(b-1)+2(b-1)\log b
--2b\log 2-(b-1)(\gamma+\log\pi)\right],
-$$
-
-where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.0)
-
-Let $\tau_1,\ldots,\tau_{500}$ be the first 500 positive ordinates and put $S(t)=\sum_{j=1}^{500}a_{\tau_j}(1+\cos(\tau_j t))$. For every $\varepsilon>0$, a reversal at sufficiently large $y$ gives $S(\log(by))\le\Delta+\varepsilon$. For $\lambda>0$ this bounds its indicator above by $e^{\lambda(\Delta+\varepsilon)}e^{-\lambda S(\log(by))}$. The average for the variable $t=\log(by)$ is the usual average over an interval of length $\log X$.
-
-Take $d=500000$, $\lambda=150000$, $v_j=\lambda a_{\tau_j}$, $c_j=(1-e^{-2v_j/d})/2$ and $u_j=d c_j$. On $0\le q\le2$, convexity bounds $e^{-v_j q/d}$ by the chord $1-c_j q$. It follows that the nonnegative trigonometric polynomial
-
-$$
-P_j(\theta)=(1-c_j(1+\cos\theta))^d
-$$
-
-majorizes $e^{-v_j(1+\cos\theta)}$. It has Fourier degree at most $d$. Best and Trudgian established that no nonzero relation $\sum n_j\tau_j=0$ exists among these 500 ordinates for integer coefficients of absolute value at most $d$. In their Table 2 the bound for the first 500 is $5.54632\times10^5$. Consequently the time average of $\prod_j P_j(\tau_j t)$ is exactly the product of the constant Fourier coefficients. This step uses their published finite calculation. [Best and Trudgian, Appendix A, Table 2](https://arxiv.org/pdf/1209.3843#page=13)
-
-Since $1-c_jq\le e^{-c_jq}$, each constant coefficient is at most $e^{-u_j}I_0(u_j)$, where $I_0(u)$ is the circle average of $e^{u\cos\theta}$. Taking the upper limit, then letting $\varepsilon\downarrow0$, gives
-
-$$
-\limsup_{X\to\infty}d(X)\ \le\
- e^{\lambda\Delta}\prod_{j=1}^{500} e^{-u_j}I_0(u_j)
- \ <\ 10^{-232}.
-$$
-
-This bound concerns logarithmic frequency. It gives no location for the first reversal.
-
-## Prior work and checks
-
-Rubinstein and Sarnak developed the distribution theory of prime races. Fiorilli obtained races with biases arbitrarily close to one, and Zhao studied integrals of Mertens errors related to this weighted sum. An earlier calculation for this exact window gives arbitrarily late reversals under an additional independence hypothesis. The estimate here concerns the specific $3/2$ window under RH alone. The literature checked yielded no earlier value for this bound. [Rubinstein–Sarnak](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf) · [Fiorilli](https://arxiv.org/abs/1210.6946) · [Zhao](https://arxiv.org/html/2411.18903v2) · [Earlier oscillation statement](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
+## Verification
 
 The first program encloses 500 zero ordinates and evaluates the scaled Bessel function in ball arithmetic. The second verifies a sign change of the completed zeta function in 500 disjoint intervals and checks the zero count above them. It computes $L$ from the original ramp and an enclosed positive tail. It bounds each scaled Bessel factor by its positive power series with a geometric remainder. Both programs use FLINT. Best and Trudgian's lattice computation is an input from the cited paper.
 
@@ -72,4 +45,8 @@ python verify.py
 python independent.py
 ```
 
-[Recorded runs](evidence/check.txt) · [Checksums](SHA256SUMS)
+[Recorded runs](evidence/check.txt), [checksums](SHA256SUMS)
+
+## Prior work
+
+Rubinstein and Sarnak developed the distribution theory of prime races. Fiorilli obtained races with biases arbitrarily close to one, and Zhao studied integrals of Mertens errors related to this weighted sum. An earlier calculation for this exact window gives arbitrarily late reversals under an additional independence hypothesis. The estimate here concerns the specific $3/2$ window under RH alone. The literature checked yielded no earlier value for this bound. [Rubinstein and Sarnak](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf), [Fiorilli](https://arxiv.org/abs/1210.6946), [Zhao](https://arxiv.org/html/2411.18903v2), [Earlier oscillation statement](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
