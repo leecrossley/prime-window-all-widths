@@ -41,4 +41,4 @@ python3 -m pip install -r requirements.txt
 python3 verify-release.py
 ```
 
-The command checks the file hashes and runs both certificates. The explicit formula and the passage from the bounded width interval to every larger width are written proofs. [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Release](https://github.com/leecrossley/prime-window-all-widths/releases/tag/v1.0.0)
+The command checks the file hashes and runs both certificates. The two programs implement the same written argument separately, so they share its analytic inputs and the width partition in `widths.json`. The explicit formula and the passage from the bounded width interval to every larger width are written proofs. [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Release](https://github.com/leecrossley/prime-window-all-widths/releases/tag/v1.0.0)
