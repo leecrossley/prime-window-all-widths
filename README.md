@@ -1,5 +1,11 @@
 # Two-sided density bounds for reversals of the three-halves prime window
 
+At dilation $b=3/2$, a reversal is a scale $y$ where the weighted sum of primes between $y$ and $2.25y$ overshoots its predicted size. Assuming the Riemann hypothesis (RH) and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros, reversals have a well-defined logarithmic density $\delta$, and this repository pins it between $10^{-10000}$ and $10^{-1012}$.
+
+The lower bound shows that, under these hypotheses, reversals occupy a positive proportion of the logarithmic scale. The upper bound shows how small that proportion is. A [companion repository](https://github.com/leecrossley/three-halves-reversal-upper-density/tree/v1.0.0) bounds the upper logarithmic density by $10^{-232}$ under RH alone. Neither result locates the first reversal.
+
+## Statement
+
 Assume the Riemann hypothesis and rational linear independence of the distinct positive ordinates of the nontrivial zeta zeros. The $3/2$ weighted prime window overshoots its main term on a set with logarithmic density $\delta$ satisfying
 
 $$10^{-10000}<\delta<10^{-1012}.$$
@@ -22,58 +28,16 @@ $$
 
 All logarithms are natural.
 
-## Why the density exists
+## How the proof goes
 
-Under RH the weighted explicit formula and the ordinary-prime square term give
+1. Under RH the normalised deficit $D_b(y)/\sqrt y$ is $-\Delta$ plus a sum of non-negative terms $a_\tau[1+\cos(\tau\log(by))]$ over the zeta zeros, up to $o(1)$. Here the $a_\tau>0$ are explicit summable coefficients with sum $L$, and $\Delta=L-2\sqrt b(\sqrt b-1)^2$ satisfies $0<\Delta<0.00163$. [PROOF.md](PROOF.md) gives the formulas.
+2. Under independence, Kronecker's theorem makes the phases behave like independent uniform angles. The limiting distribution has no atom at zero, so the density $\delta$ exists.
+3. **Upper bound.** In the limiting distribution, on the reversal event the terms from the first 5,000 zeros add up to at most $\Delta$. An exponential bound with $\lambda=1170000$ and Bessel function values gives $\delta<10^{-1012}$.
+4. **Lower bound.** Hold the first 15,000 angles close to $\pi$, so that their terms add up to at most $0.0004$. Whatever the other angles, the remaining terms add at most $2(L-A_N)$, where $A_N$ is the sum of the first $N=15000$ coefficients, and the certificate proves the total stays below $\Delta$. This box of angles lies inside the reversal event and has volume above $10^{-10000}$.
 
-$$
-\frac{D_b(y)}{\sqrt y}=-\Delta+
-  \sum_{\tau>0}a_\tau[1+\cos(\tau\log(by))]+o(1),
-\qquad
-a_\tau=\frac{2\sqrt b\thinspace[b+1-2\sqrt b\cos(\tau\log b)]}{1/4+\tau^2}.
-$$
+The full argument is in [PROOF.md](PROOF.md).
 
-The sum counts conjugate pairs with multiplicity. The coefficients are positive and summable. Write $B=2\sqrt b(\sqrt b-1)^2$, $L=\sum_{\tau>0}a_\tau$ and $\Delta=L-B$. At $b=3/2$ we have $0<\Delta<0.00163$. A closed expression for this mass at $1<b\le2$ is
-
-$$
-L=\sqrt b\left[(b+1)\log(b+1)-(b-1)\log(b-1)+2(b-1)\log b
--2b\log 2-(b-1)(\gamma+\log\pi)\right],
-$$
-
-where $\gamma$ is Euler's constant. This absolute convergence lets us give every omitted coefficient its most adverse phase. [Derivation from the explicit formula](https://github.com/leecrossley/prime-band-extrema/tree/v1.0.0)
-
-Under the independence hypothesis, Kronecker's theorem gives uniform distribution for any finite vector of distinct phases modulo $2\pi$ as $\log(by)$ ranges over an interval of increasing length. Group repeated ordinates, assigning their full multiplicity to the coefficient. The positive coefficients are summable, hence finite sums approximate the full sum uniformly. Its limiting distribution is that of $-\Delta+\sum a_\tau(1+\cos\Theta_\tau)$, with independent uniform angles for the distinct ordinates and the indicated multiplicity in each coefficient. This distribution has no atom at zero. Conditioning on the other angles leaves one nonconstant cosine with a continuous distribution. Approximation of the sign indicator by continuous functions now gives $\delta=\lim_{X\to\infty}d(X)$, even with the $o(1)$ term in the explicit formula. [Rubinstein and Sarnak's prime-race framework](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf)
-
-## Upper bound
-
-The first 5,000 positive ordinates are distinct. On the reversal event their contribution $\sum_{j\le5000}a_j(1+\cos\Theta_j)$ is at most $\Delta$, since all later terms are nonnegative. Exponential Markov bounding with $\lambda=1170000$ gives
-
-$$
-\delta\le e^{\lambda\Delta}\prod_{j=1}^{5000}
-                 e^{-\lambda a_j}I_0(\lambda a_j)<10^{-1012}.
-$$
-
-Here $I_0(u)$ is the circle average of $e^{u\cos\theta}$. The inequalities use certified enclosures for the ordinates, weights and Bessel functions.
-
-## Lower bound
-
-Take $N=15000$, $e=0.0004$, $A_N=\sum_{j\le N}a_j$, and impose the following condition on just the first $N$ angles,
-
-$$
-|\Theta_j-\pi|\le\phi_j=\min\left(\pi,\sqrt{2e/(Na_j)}\right)\quad(1\le j\le N),
-$$
-
-with angles in $[0,2\pi]$. Since $1-\cos v\le v^2/2$, these $N$ modes together contribute at most $e$. All remaining modes contribute at most $2(L-A_N)$, whatever their angles. The certificate proves $e+2(L-A_N)<\Delta$, so this whole box has negative normalized deficit. Its volume under independent uniform angles is
-
-$$
-\prod_{j=1}^N \frac{\phi_j}{\pi}>10^{-10000}.
-$$
-
-In particular the reversals occupy a positive proportion on the logarithmic scale. These bounds leave the location of the first reversal open.
-
-## Prior work and checks
-
-The existence argument belongs to the classical theory of prime races. Lamzouri studied large deviations for prime number races, and Zhao studied oscillation and bias for integrals of Mertens errors. The earlier result for this window establishes recurring conditional reversals. These two quantitative bounds apply to the specific $3/2$ ordinary-prime window. The literature checked yielded no earlier numerical interval for its reversal density. [Lamzouri](https://arxiv.org/abs/1103.0060) · [Zhao](https://arxiv.org/html/2411.18903v2) · [Earlier oscillation statement](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.0)
+## Verification
 
 The first program isolates 15,000 consecutive positive ordinates with FLINT and computes both bounds in logarithms. The second verifies opposite signs of the completed zeta function on both sides of every supplied centre, then confirms the total count. It uses the unshifted ramp with a bounded series remainder, evaluates the Bessel upper bounds by positive series, and multiplies the lower box volume directly. Both use ball arithmetic.
 
@@ -83,4 +47,8 @@ python verify.py
 python independent.py
 ```
 
-[Recorded runs](evidence/check.txt) · [Checksums](SHA256SUMS)
+[Recorded runs](evidence/check.txt), [checksums](SHA256SUMS)
+
+## Prior work
+
+The existence argument belongs to the classical theory of prime races. Lamzouri studied large deviations for prime number races, and Zhao studied oscillation and bias for integrals of Mertens errors. The earlier result for this window establishes recurring conditional reversals. These two quantitative bounds apply to the specific $3/2$ ordinary-prime window. The literature checked yielded no earlier numerical interval for its reversal density. [Lamzouri](https://arxiv.org/abs/1103.0060), [Zhao](https://arxiv.org/html/2411.18903v2), [Earlier oscillation statement](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
