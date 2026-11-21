@@ -1,5 +1,7 @@
 # The sharp width for a prime deficit at every scale
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410881.svg)](https://doi.org/10.5281/zenodo.24410881)
+
 Assume the Riemann hypothesis (RH). Once the width parameter reaches $b_\ast=1.50342897722316\ldots$, the weighted sum of ordinary primes in $(y,b^2y)$ stays strictly below its main term for **every real scale $y>0$ and every real $b\ge b_\ast$**. This includes the critical width itself.
 
 Below the cutoff, assume also that the distinct positive ordinates of the zeta zeros are linearly independent over the rationals. For each fixed $1<b<b_\ast$ the sum then passes above and below its main term arbitrarily far out. The threshold and this oscillation result were established in the [earlier transition theorem](https://github.com/leecrossley/prime-band-transition/tree/5fa6cfd68d6afa1451e45a56f6a88195c8b74dff).
