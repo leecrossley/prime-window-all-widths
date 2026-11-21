@@ -49,6 +49,8 @@ python independent.py
 
 ## Prior work
 
+At width $b=2$, bramble_trace's earlier certificate reached $10^{35}$ in its centre variable $x=2y$, using a finite verified zero height, density estimates and phases of low zeros. Here the width is $3/2$ and the certified endpoint in $y$ is $10^{28}$. [Dyadic certificate, revision 26](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=26)
+
 Caceres previously used zero-density strips to certify a different, cumulative logarithmic Riesz weight for the von Mangoldt function. This is a precedent for the finite-height method. [Caceres, Theorem 6](https://hexagonmath.org/pdf/2610.00661v2)
 
 The literature checked included Suzuki's cumulative criterion, the Caceres verification, Zhao's integrated Mertens errors and prior calculations for this exact window. I found no prior bound of this size for this $3/2$ ordinary-prime sum. [Suzuki](https://arxiv.org/abs/2411.07436), [Zhao](https://arxiv.org/html/2411.18903v2), [Previously established conditional sign changes](https://github.com/leecrossley/prime-band-three-halves-oscillation/tree/v1.0.1)
