@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The critical prime window stays positive at every scale"
+abstract: "Under RH the weighted prime deficit stays positive at every real scale from the exact transition through dilation 1.51. Prime cubes settle the boundary."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/prime-band-critical-all-scales
+type: software
