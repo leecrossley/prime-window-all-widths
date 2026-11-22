@@ -17,13 +17,17 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 | [Two-sided density bounds for reversals of the three-halves prime window](results/three-halves-reversal-density/) | [bd620c59b4](https://github.com/leecrossley/three-halves-reversal-density/tree/bd620c59b47baa22ded976408f4edf88e41ec4a7) | [DOI](https://doi.org/10.5281/zenodo.24410817) | [Issues](https://github.com/leecrossley/prime-window-all-widths/issues) · [PRs](https://github.com/leecrossley/prime-window-all-widths/pulls) |
 | [The three-halves prime window stays below its main term through 10²⁸](results/three-halves-prime-window-1e28/) | [990201d7bd](https://github.com/leecrossley/three-halves-prime-window-1e28/tree/990201d7bdd44ef00041ebc6c9fa0e644d888948) | [DOI](https://doi.org/10.5281/zenodo.24410819) | [Issues](https://github.com/leecrossley/prime-window-all-widths/issues) · [PRs](https://github.com/leecrossley/prime-window-all-widths/pulls) |
 
+The [Mellin transform lemmas](results/prime-band-mellin/BandSpectrum.lean) are also distributed with the [fourth-power Möbius proof](https://github.com/leecrossley/prime-window-rh-criterion/blob/19bf25bce18fc91bdbd367873ad6762383a36612/results/prime-window-power-samples/pairs/mobius/lean/BandSpectrum.lean).
+
 ## Checking the collection
 
-Run `sh verify-collection.sh` from the repository root to check the result manifests. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
+When a collection file changes, stage new paths with Git, then run `python3 tools/collection_manifest.py --write` to refresh `COLLECTION.sha256`.
+
+Run `sh verify-collection.sh` from the repository root to check the collection files and the manifests for every result directory. The index must point to an existing result with a manifest. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
 
 ## Review discussions at import
 
-GitHub shows the current status and subsequent replies at each original link. Review notes posted from the author’s account record checks made by or for the author. They are not independent referee reports.
+GitHub shows the current status and subsequent replies at each original link. Review notes posted from the author’s account record checks made by or for the author. The [modulus-11 issue](https://github.com/leecrossley/integrated-prime-errors-mod-11/issues/3) and the [review of the 1.51-width paper](https://github.com/leecrossley/prime-band-151-100/pull/2) were posted from the author’s account. The first records floating-point calculations. Neither record identifies an independent referee.
 
 - [prime-window-all-widths issue 5](https://github.com/leecrossley/prime-window-all-widths/issues/5) — Clarify who performed the checks in earlier review notes
 
